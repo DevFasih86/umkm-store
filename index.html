@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Cahaya</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<html>
+<body>
+    <nav class="navbar">
+        <div class="logo">RM<span>CAHAYA</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Branda</a></li>
+            <li><a herf="#menu">List-Menu</a></li>
+            <li><a href="#contack">Kontak</a></li>
+        </ul>
+        <button class="cart-btn" id="cart-btn">
+            🛒Keranjang(<span id="cart-count">0</span>)
+        </button>
+    </nav>
+    <!-- Konten Utama dan isinya-->
+<header class="hero" id="home">
+    <div class="hero-content">
+        <h1>Selamat Datang di Rumah Makan Cahaya.</h1>
+        <p>Masakkan ala rumahan yang gak perlu lagi masak, kalo lagi buru-buru.</p>
+        <a href="#menu" class="cta-btn">Silakan lihat menunya</a>
+    </div>
+</header>
+
+<section id="menu" class="menu-section">
+    <h2>Menu Kesukkan anak kos</h2>
+    <div class="menu-grid" id="menu-list"></div>
+</section>
+    <!-- Popup (Modal) Keranjang -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-box">
+            <div class="cart-header">
+                <h3>Pesanan Kamu</h3>
+                <button class="close-btn" id="close-cart">&times;</button>
+            </div>
+
+            <!-- Daftar item yang dipilih akan muncul di sini -->
+            <div class="cart-items" id="cart-items">
+                <p>Keranjang masih kosong.</p>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    Total: <span id="cart-total">Rp 0</span>
+                </div>
+                <button class="checkout-btn" id="checkout-wa">
+                    Pesan lewat via WhatsApp
+                </button>
+            </div>
+        </div>
+
+    <!-- Form Data Pemesan -->
+<div class="customer-form" style="margin: 15px 0; text-align: left;">
+    <label for="customer-name" style="display: block; font-size: 14px; margin-bottom: 4px;">Nama Pemesan:</label>
+    <input type="text" id="customer-name" placeholder="Contoh: Budi" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+    <label for="customer-address" style="display: block; font-size: 14px; margin-bottom: 4px;">Alamat / No. Kos:</label>
+        <input type="text" id="customer-address" placeholder="Contoh: Kos Melati No. 5, Banjarbaru" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+
+    <label for="payment-method" style="display: block; font-size: 14px; margin-bottom: 4px;">Metode Pembayaran:</label>
+<select id="payment-method" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+    <option value="Tunai (COD)">Tunai (COD)</option>
+    <option value="Transfer Bank / QRIS">Transfer Bank / QRIS</option>
+</select>
+</div>
+
+<!-- Footer -->
+    <footer id="kontak" class="footer">
+        <p>&copy; 2026 RM Cahaya By Fasih. Hubungi WA: 0858-2242-8486</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
